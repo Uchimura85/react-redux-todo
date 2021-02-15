@@ -8,7 +8,7 @@ const getVisibleTodos = (todos, filter) => {
     case 0:
       return todos
     default:
-      return todos.filter(t => t.name.includes(filter))
+      return todos.filter(t => t.name.toLowerCase().includes(filter.toLowerCase()))
   }
 }
 
